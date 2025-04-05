@@ -4,7 +4,7 @@ const http = require("http");
 const app = express();
 const path = require("path");
 const bodyParser = require("body-parser");
-const { Server } = require('socket.io'); // importazione oggetto Server da socket.io
+const { Server } = require('socket.io');
 const conf = JSON.parse(fs.readFileSync("./conf.json"));
 
 app.use(bodyParser.json());
